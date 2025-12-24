@@ -36,7 +36,6 @@ At first set SAVE_LOGITS = True and run, so we get:
 Then default set SAVE_LOGITS = False,
 new run will compare logits with previously saved logits.
 
-Classes from train_rgb.py will be imported
 
 
 4. train_ms.py
