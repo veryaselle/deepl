@@ -13,6 +13,8 @@ import os
 import csv
 import random
 from pathlib import Path
+from config import RGB_DATASET_ROOT, SPLITS_ROOT, SEED
+
 
 import numpy as np
 from PIL import Image
@@ -25,9 +27,9 @@ from torchvision import transforms, models
 # *+*+*+*+*
 # CONFIG
 # *+*+*+*+*
-DATASET_ROOT = Path("/home/...your_path/deepl/datasets/EuroSAT_RGB/")  
-PROJECT_ROOT = Path("/home/...your_path/deepl/") 
-SEED = 1234567  # matrikelnr
+DATASET_ROOT = RGB_DATASET_ROOT
+PROJECT_ROOT = SPLITS_ROOT
+# SEED = 1234567  # matrikelnr
 
 BATCH_SIZE = 64
 NUM_EPOCHS = 10

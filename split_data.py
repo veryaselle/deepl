@@ -1,20 +1,27 @@
 # src/split_data.py
 # task 1
+# Stratified split of EuroSAT_RGB into train/val/test
+# Uses paths from config.py, no absolute paths.
 
 import os
 from pathlib import Path
 from collections import defaultdict
 
+from config import RGB_DATASET_ROOT, SPLITS_ROOT, SEED
+
+
 from sklearn.model_selection import train_test_split
 import numpy as np
 import random
 
-# =========================
+# ===========
 # CONFIG
-# =========================
-DATASET_ROOT = Path("/home/...your_path/deepl/datasets/EuroSAT_RGB/")  
-PROJECT_ROOT = Path("/home/...your_path/deepl/")  
-SEED = 1234567  # matrikelnr
+# ===========
+
+DATASET_ROOT = RGB_DATASET_ROOT
+PROJECT_ROOT = SPLITS_ROOT
+# SEED type matrikelnr into config.py
+
 
 # 60 / 20 / 20
 TRAIN_RATIO = 0.6

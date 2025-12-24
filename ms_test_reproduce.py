@@ -17,6 +17,8 @@ from pathlib import Path
 import numpy as np
 import torch
 from torch.utils.data import DataLoader
+from config import MS_DATASET_ROOT, SPLITS_ROOT, SEED
+
 
 from train_ms import (
     EuroSATMSDataset,
@@ -31,9 +33,8 @@ from train_rgb import (
 # =*=*=*=*=*=*=*=*=*=*=
 # CONFIG
 # ==+==+==+==+==*==*==*
-DATASET_ROOT = Path("/home/...your_path/deepl/datasets/EuroSAT_RGB/")  
-PROJECT_ROOT = Path("/home/...your_path/deepl/")  
-SEED = 1234567  # matrikelnr
+DATASET_ROOT = MS_DATASET_ROOT
+PROJECT_ROOT = SPLITS_ROOT
 
 BATCH_SIZE = 64
 NUM_WORKERS = 2

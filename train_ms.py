@@ -19,6 +19,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import Dataset, DataLoader
+from config import MS_DATASET_ROOT, SPLITS_ROOT, SEED
+
 
 from skimage.io import imread # !python -m pip install --user scikit-image
 
@@ -35,10 +37,9 @@ from train_rgb import (
 # CONFIG
 # =*=*=*=*=*=*=*=*=*=*=*==*
 # to .tif
-DATASET_ROOT = Path("/home/...your_path/deepl/datasets/EuroSAT_RGB/")  
-PROJECT_ROOT = Path("/home/...your_path/deepl/")  
+DATASET_ROOT = MS_DATASET_ROOT
+PROJECT_ROOT = SPLITS_ROOT
 
-SEED = 1234567  # matrikelnr
 
 BATCH_SIZE = 64
 NUM_EPOCHS = 10

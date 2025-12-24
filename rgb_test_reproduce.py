@@ -20,6 +20,8 @@ import numpy as np
 import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
+from config import RGB_DATASET_ROOT, SPLITS_ROOT, SEED
+
 
 from train_rgb import (
     EuroSATRGBDataset,
@@ -32,9 +34,10 @@ from train_rgb import (
 # ***let**it**snow***
 # CONFIG
 # +++happy++new++year++
-DATASET_ROOT = Path("/home/...your_path/deepl/datasets/EuroSAT_RGB/")  
-PROJECT_ROOT = Path("/home/...your_path/deepl/") 
-SEED = 1234567  # matrileknr
+DATASET_ROOT = RGB_DATASET_ROOT
+PROJECT_ROOT = SPLITS_ROOT
+
+
 
 BATCH_SIZE = 64
 NUM_WORKERS = 4 # change to 2 if warnings coming :D
