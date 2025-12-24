@@ -63,7 +63,9 @@ At first set SAVE_LOGITS = True and run, so we get:
 Then default set SAVE_LOGITS = False,
 new run will compare logits with previously saved logits.
 
-Classes from train_rgb.py and train_ms.py will be imported
+
+If everything ok, look through monitoring_plotting.ipynb, run and compare.
+Have fun!
 
 
 
