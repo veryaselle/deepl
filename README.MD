@@ -6,7 +6,7 @@ Start with downloading pytorch :D
 
 Code is good commented, but anyways:
 
-0. Change pathes to your own properly in config.py
+0. Export datasets / change pathes to your own properly in config.py
 
 1. split_data.py
 task 1
