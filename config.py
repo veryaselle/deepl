@@ -25,6 +25,7 @@ SPLITS_ROOT = PROJECT_ROOT / "splits"
 SEED = 123456  # matrikelnr
 
 
+# on terminal
 # export RGB_DATASET_ROOT=/home/to_your_path/deepl/datasets/EuroSAT_RGB
 # export MS_DATASET_ROOT=/home/to_your_path/deepl/datasets/EuroSAT_MS
 
