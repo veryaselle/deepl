@@ -4,8 +4,9 @@
 from pathlib import Path
 import os
 
-# make your own changes to place your project right
-PROJECT_ROOT = Path("/home/...your_path")
+# make sure to place your project right
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+
 
 DATASETS_ROOT = PROJECT_ROOT / "/...datasets"
 
@@ -22,3 +23,8 @@ MS_DATASET_ROOT = Path(
 SPLITS_ROOT = PROJECT_ROOT / "splits"
 
 SEED = 123456  # matrikelnr
+
+
+# export RGB_DATASET_ROOT=/home/sc.uni-leipzig.de/ab20zawy/deepl/datasets/EuroSAT_RGB
+# export MS_DATASET_ROOT=/home/sc.uni-leipzig.de/ab20zawy/deepl/datasets/EuroSAT_MS
+
