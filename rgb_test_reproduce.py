@@ -1,4 +1,4 @@
-# src/rgb_test_reproduce.py
+# rgb_test_reproduce.py
 # 3 and 4
 
 

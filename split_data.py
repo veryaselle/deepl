@@ -1,4 +1,4 @@
-# src/split_data.py
+# split_data.py
 # task 1
 # Stratified split of EuroSAT_RGB into train/val/test
 # Uses paths from config.py, no absolute paths.

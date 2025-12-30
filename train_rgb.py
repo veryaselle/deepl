@@ -1,4 +1,4 @@
-# src/train_rgb.py
+# train_rgb.py
 # 2
 
 

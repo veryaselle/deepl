@@ -1,4 +1,4 @@
-# src/ms_test_reproduce.py
+# ms_test_reproduce.py
 # 6 and 7
 
 # Task 3: testing final MS-model, saving logits and

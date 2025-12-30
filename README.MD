@@ -32,14 +32,14 @@ This project strictly follows the path requirements from the assignment:
 
 Code is good commented, but anyways:
 
-0. Export datasets and take a look at config.py properly
+0. Export datasets and take a look at **config.py** properly
 
-1. split_data.py
-task 1
+1. **split_data.py**
+Task 1
 
 
 
-2. train_rgb.py
+2. **train_rgb.py**
 Task 2a
 
 RGB classification on EuroSAT
@@ -50,7 +50,7 @@ RGB classification on EuroSAT
 - save best model per augmentation + overall best
 
 
-3. rgb_test_reproduce.py
+3. **rgb_test_reproduce.py**
 
 Task 2b: test of final RGB model, logit saving and reproduction routine
 
@@ -64,7 +64,7 @@ new run will compare logits with previously saved logits.
 
 
 
-4. train_ms.py
+4. **train_ms.py**
 
 Task 3a: Classification with multispectral EuroSAT_MS using late fusion
 
@@ -77,7 +77,7 @@ Task 3a: Classification with multispectral EuroSAT_MS using late fusion
 * choose the best model by its val accuracy, save as ms_final.pt
 
 
-5. ms_test_reproduce.py
+5. **ms_test_reproduce.py**
 
 Task 3b: testing final MS-model, saving logits and reproduction routine, like RGB.
 
@@ -90,7 +90,7 @@ Then default set SAVE_LOGITS = False,
 new run will compare logits with previously saved logits.
 
 
-If everything ok, look through monitoring_plotting.ipynb, run and compare.
+If everything ok, look through **monitoring_plotting.ipynb**, run and compare.
 Have fun!
 
 

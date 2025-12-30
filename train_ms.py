@@ -1,4 +1,4 @@
-# src/train_ms.py
+# train_ms.py
 # 5
 
 # Task 3: Classification with multispectral EuroSAT_MS using late fusion.
