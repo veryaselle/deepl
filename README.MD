@@ -32,7 +32,7 @@ This project strictly follows the path requirements from the assignment:
 
 Code is good commented, but anyways:
 
-0. Export datasets / change pathes to your own properly in config.py
+0. Export datasets and take a look at config.py properly
 
 1. split_data.py
 task 1
