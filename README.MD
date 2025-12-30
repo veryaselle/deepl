@@ -4,6 +4,32 @@ Data source: https://huggingface.co/datasets/torchgeo/eurosat
 
 Start with downloading pytorch :D
 
+
+
+## Paths and project structure
+
+This project strictly follows the path requirements from the assignment:
+
+- **No absolute paths are hard-coded in the code.** 
+  All paths are defined **relative to the project root** via `src/config.py`.
+
+- **Dataset roots** are defined as:
+  - `RGB_DATASET_ROOT`
+  - `MS_DATASET_ROOT` 
+  By default, the following relative directories are used:
+  - `datasets/EuroSAT_RGB`
+  - `datasets/EuroSAT_MS` 
+  This means that if the datasets are placed in these folders, **no code changes are required**.
+
+- Optionally, the dataset locations can be overridden **without modifying the code** by using environment variables:
+  ```bash
+  export RGB_DATASET_ROOT=/path/to/EuroSAT_RGB
+  export MS_DATASET_ROOT=/path/to/EuroSAT_MS
+
+
+
+
+
 Code is good commented, but anyways:
 
 0. Export datasets / change pathes to your own properly in config.py
