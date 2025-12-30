@@ -22,7 +22,7 @@ MS_DATASET_ROOT = Path(
 
 SPLITS_ROOT = PROJECT_ROOT / "splits"
 
-SEED = 123456  # matrikelnr
+SEED = 3719704  # matrikelnr
 
 
 # on terminal
