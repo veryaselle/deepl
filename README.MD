@@ -11,7 +11,7 @@ Start with downloading pytorch :D
 This project strictly follows the path requirements from the assignment:
 
 - **No absolute paths are hard-coded in the code.** 
-  All paths are defined **relative to the project root** via `src/config.py`.
+  All paths are defined **relative to the project root** via `config.py`.
 
 - **Dataset roots** are defined as:
   - `RGB_DATASET_ROOT`
