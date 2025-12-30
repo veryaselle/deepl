@@ -90,7 +90,7 @@ Then default set SAVE_LOGITS = False,
 new run will compare logits with previously saved logits.
 
 
-If everything ok, look through **monitoring_plotting.ipynb**, run and compare.
+If everything ok, look through **plotting.ipynb**, run and compare.
 Have fun!
 
 
