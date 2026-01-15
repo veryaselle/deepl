@@ -1,5 +1,8 @@
-# rgb_test_reproduce.py
-# 3 and 4
+# src/rgb_test_reproduce2.py
+# 4 
+# SAVE_LOGITS = False
+
+
 
 
 # Task 2: test of final RGB model, logit saving and

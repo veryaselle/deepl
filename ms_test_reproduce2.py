@@ -1,5 +1,9 @@
-# ms_test_reproduce.py
-# 6 and 7
+# src/ms_test_reproduce2.py
+# 7
+# SAVE_LOGITS = False
+
+
+
 
 # Task 3: testing final MS-model, saving logits and
 # reproduction routine, like RGB.

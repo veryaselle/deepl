@@ -1,7 +1,7 @@
-# split_data.py
+# src/split_data.py
 # task 1
 # Stratified split of EuroSAT_RGB into train/val/test
-# Uses paths from config.py, no absolute paths.
+# Uses paths from config.py, no absolute paths
 
 import os
 from pathlib import Path
@@ -20,7 +20,6 @@ import random
 
 DATASET_ROOT = RGB_DATASET_ROOT
 PROJECT_ROOT = SPLITS_ROOT
-# SEED type matrikelnr into config.py
 
 
 # 60 / 20 / 20

@@ -2,7 +2,23 @@ Data source: https://huggingface.co/datasets/torchgeo/eurosat
 
 
 
-Start with downloading pytorch :D
+##Start with downloading pytorch :D
+###Requirements:
+- torch
+- torchvision
+- numpy
+- matplotlib
+- tqdm
+- scikit-image
+- scikit-learn
+- pandas
+- pillow
+- tensorboard
+
+  Run:
+
+  ```bash
+  pip install torch torchvision numpy pandas matplotlib tqdm scikit-learn pillow scikit-image tensorboard
 
 
 
@@ -32,7 +48,7 @@ This project strictly follows the path requirements from the assignment:
 
 Code is good commented, but anyways:
 
-0. Export datasets and take a look at **config.py** properly
+0. Place datasets and take a look at **config.py** properly
 
 1. **split_data.py**
 Task 1
@@ -50,7 +66,7 @@ RGB classification on EuroSAT
 - save best model per augmentation + overall best
 
 
-3. **rgb_test_reproduce.py**
+3. **rgb_test_reproduce1.py**
 
 Task 2b: test of final RGB model, logit saving and reproduction routine
 
@@ -60,7 +76,7 @@ At first set SAVE_LOGITS = True and run, so we get:
 * accuracy + TPR by classes on test
 
 Then default set SAVE_LOGITS = False,
-new run will compare logits with previously saved logits.
+new run will compare logits with previously saved logits -> **rgb_test_reproduce2.py**
 
 
 
@@ -77,7 +93,7 @@ Task 3a: Classification with multispectral EuroSAT_MS using late fusion
 * choose the best model by its val accuracy, save as ms_final.pt
 
 
-5. **ms_test_reproduce.py**
+5. **ms_test_reproduce1.py**
 
 Task 3b: testing final MS-model, saving logits and reproduction routine, like RGB.
 
@@ -87,11 +103,23 @@ At first set SAVE_LOGITS = True and run, so we get:
 * accuracy + TPR by classes on test
 
 Then default set SAVE_LOGITS = False,
-new run will compare logits with previously saved logits.
+new run will compare logits with previously saved logits -> **ms_test_reproduce2.py**
 
 
-If everything ok, look through **plotting.ipynb** and **validation.ipynb**, run and compare.
-Have fun!
+6. **per_class_validation.py**
+Task 2c: Per-Class Validation Accuracy RGB (optionally also Per-Class Validation Accuracy MS)
+
+
+7. **plotting_rgb.py** and **plotting_ms.py**
+Both figures "RGB accuracy and loss" and "MS accuracy and loss" show the training and validation curves for the RGB model with strong augmentation.
+
+
+8. **top5_bottom5.py**
+Random Top-5 / bottom-5 for each classes logits
+
+
+If everything is ok, look through **plotting.ipynb** and **per_class_validation.ipynb** to compare.
+
 
 
 

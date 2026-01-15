@@ -1,4 +1,4 @@
-# train_rgb.py
+# src/train_rgb.py
 # 2
 
 
@@ -29,13 +29,11 @@ from torchvision import transforms, models
 # *+*+*+*+*
 DATASET_ROOT = RGB_DATASET_ROOT
 PROJECT_ROOT = SPLITS_ROOT
-# SEED = 1234567  # matrikelnr
 
 BATCH_SIZE = 64
 NUM_EPOCHS = 10
 LEARNING_RATE = 1e-4
 NUM_WORKERS = 2 # 4 is good, but with 2 there are no warnings
-# =========================
 
 
 def set_global_seeds(seed: int):
@@ -331,10 +329,6 @@ def main():
         pin_memory=True,
     )
 
-    # Optional: test will be needed for logits, top-5/bottom-5)
-    # test_dataset = EuroSATRGBDataset(
-    #     DATASET_ROOT, PROJECT_ROOT, split="test", transform=eval_transform
-    # )
 
     models_dir = PROJECT_ROOT / "models"
     models_dir.mkdir(parents=True, exist_ok=True)
@@ -387,7 +381,7 @@ def main():
                 aug_name,
                 train_loss,
                 train_acc,
-                [0.0] * num_classes,  # TPR on classes is not really needed to be counted for train
+                [0.0] * num_classes, 
             )
 
             val_loss, val_acc, val_tpr = evaluate(
